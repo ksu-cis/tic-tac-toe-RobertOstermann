@@ -55,4 +55,12 @@ for (i = 0; i < cells.length; i++) {
     cells[i].addEventListener('click', onClick);
 }
 
+var form = documnet.getElementsById("board")
+var serverCells = document.getElementsByClassName("cell");
+for (var i = ; i < serverCells.length; i++) {
+    serverCells[i].addEventListener(event => {
+        form.submit();
+    })
+}
+
 setTurn();
