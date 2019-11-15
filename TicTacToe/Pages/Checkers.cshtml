@@ -1,0 +1,18 @@
+﻿@page
+@model TicTacToe.Pages.CheckersModel
+@{
+    ViewData["Title"] = "Checkers";
+}
+
+<h2>Checkers</h2>
+<div id="boardCheckers">
+    @for(int y = 0; y < 8; y++)
+    {
+        @for(int x = 0; x < 8; x++)
+        {
+            <div class="squareCheckers @((x + y) % 2 == 0 ? "black": "red")">
+
+            </div>
+        }
+    }
+</div>
