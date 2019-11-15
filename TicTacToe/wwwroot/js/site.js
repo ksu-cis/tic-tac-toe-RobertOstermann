@@ -64,3 +64,13 @@ for (var i = ; i < serverCells.length; i++) {
 }
 
 setTurn();
+
+var squares = document.getElementsByClassName("squareCheckers");
+for (var i = 0; i < squares.length; i++)
+{
+    squares[i].addEventListener('drop', onDrop);
+}
+
+function onDrop(event) {
+    console.log(event);
+}

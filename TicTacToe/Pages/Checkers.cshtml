@@ -10,8 +10,11 @@
     {
         @for(int x = 0; x < 8; x++)
         {
-            <div class="squareCheckers @((x + y) % 2 == 0 ? "black": "red")">
-
+            <div class="squareCheckers @((x + y) % 2 == 0 ? "black": "red")" dropzone="true">
+                @if(Model.Game.Board[x, y] != null)
+                {
+                    <div class="checker @Model.Game.Board[x,y].Color" draggable="true"></div>
+                }
             </div>
         }
     }

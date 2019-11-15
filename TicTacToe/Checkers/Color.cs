@@ -7,7 +7,7 @@ namespace TicTacToe.Checkers
 {
     public enum Color
     {
-        Red,
-        Black
+        red,
+        black
     }
 }

@@ -12,7 +12,7 @@ namespace TicTacToe.Pages
     {
         public void OnGet()
         {
-            
+            Game Game = new Game();
         }
     }
 }
