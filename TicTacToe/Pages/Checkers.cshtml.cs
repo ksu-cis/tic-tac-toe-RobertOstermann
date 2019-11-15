@@ -10,9 +10,14 @@ namespace TicTacToe.Pages
 {
     public class CheckersModel : PageModel
     {
+        public Game Game;
         public void OnGet()
         {
-            Game Game = new Game();
+            Game = new Game();
+        }
+        public void OnPost()
+        {
+
         }
     }
 }
